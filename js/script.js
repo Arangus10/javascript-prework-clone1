@@ -1,4 +1,3 @@
-var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
 
 /**
  * getMoveName
@@ -42,15 +41,16 @@ function displayResult(argPlayerMove, argComputerMove) {
  * Interfejs gry
  */
 
-var argButtonName, buttonTest, buttonRock, buttonPaper, buttonScissors;
+let  buttonRock, buttonPaper, buttonScissors;
 
-buttonTest = document.getElementById('button-test');
 buttonRock = document.getElementById('button-rock');
 buttonPaper = document.getElementById('button-paper');
 buttonScissors = document.getElementById('button-scissors');
 
 
+
 function buttonClicked(argButtonName) {
+    let  computerMove, playerMove, randomNumber, playerInput;
     clearMessages();
     console.log(argButtonName + ' został kliknięty');
 
